@@ -1,0 +1,477 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1">
+  <diagram name="ER Чена" id="er-chen-entity">
+    <mxGraphModel dx="3169" dy="1976" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="2000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="entity_type" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=14;fontStyle=1;align=center;fontColor=#ffffff;" value="Тип_продукции" vertex="1">
+          <mxGeometry height="50" width="120" x="105" y="281.25" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_type_id" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="&lt;u&gt;ID_Типа&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="80" x="55" y="221.25" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_type_name" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Наименование_типа" vertex="1">
+          <mxGeometry height="40" width="80" x="55" y="351.25" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_t_id" edge="1" parent="1" source="attr_type_id" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_type">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_t_name" edge="1" parent="1" source="attr_type_name" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_type">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="entity_mark" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=14;fontStyle=1;align=center;fontColor=#ffffff;" value="Марка_материала" vertex="1">
+          <mxGeometry height="50" width="120" x="90" y="491.25" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_mark_id" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="&lt;u&gt;ID_Марки&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="80" x="40" y="431.25" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_mark_name" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Наименование_марки" vertex="1">
+          <mxGeometry height="40" width="130" x="40" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_mark_dens" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Плотность" vertex="1">
+          <mxGeometry height="40" width="80" x="160" y="431.25" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_m_id" edge="1" parent="1" source="attr_mark_id" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_mark">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_m_name" edge="1" parent="1" source="attr_mark_name" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_mark">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_m_dens" edge="1" parent="1" source="attr_mark_dens" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_mark">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="entity_dens" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=14;fontStyle=1;align=center;fontColor=#ffffff;" value="Плотность_материала" vertex="1">
+          <mxGeometry height="50" width="120" x="80" y="696.25" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_dens_id" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="&lt;u&gt;ID_Плотности&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="80" x="100" y="632.5" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_dens_val" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Значение_плотности" vertex="1">
+          <mxGeometry height="40" width="130" x="75" y="767.5" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_d_id" edge="1" parent="1" source="attr_dens_id" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_dens">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_d_val" edge="1" parent="1" source="attr_dens_val" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_dens">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="entity_form" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=14;fontStyle=1;align=center;fontColor=#ffffff;" value="Форма_упаковки" vertex="1">
+          <mxGeometry height="50" width="120" x="70" y="893.75" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_form_id" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="&lt;u&gt;ID_Формы&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="80" x="90" y="837.5" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_form_name" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Наименование_формы" vertex="1">
+          <mxGeometry height="40" width="150" x="55" y="963.75" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_f_id" edge="1" parent="1" source="attr_form_id" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="897.5000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_f_name" edge="1" parent="1" source="attr_form_name" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_form">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="entity_unit" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=14;fontStyle=1;align=center;fontColor=#ffffff;" value="Единица_измерения" vertex="1">
+          <mxGeometry height="50" width="160" x="30" y="1093.75" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_unit_id" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="&lt;u&gt;ID_Единицы&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="80" x="70" y="1031.25" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_unit_name" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Наименование_единицы" vertex="1">
+          <mxGeometry height="40" width="150" x="35" y="1171.25" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_u_id" edge="1" parent="1" source="attr_unit_id" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_unit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_u_name" edge="1" parent="1" source="attr_unit_name" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_unit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="entity_sector" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=14;fontStyle=1;align=center;fontColor=#ffffff;" value="Сектор_склада" vertex="1">
+          <mxGeometry height="50" width="120" x="510" y="221.25" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_sector_id" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="&lt;u&gt;ID_Сектора&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="80" x="430" y="152.5" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_sector_name" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Наименование_сектора" vertex="1">
+          <mxGeometry height="40" width="150" x="320" y="101.25" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_sector_rack" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Номер_стеллажа" vertex="1">
+          <mxGeometry height="40" width="110" x="610" y="152.5" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_sector_sect" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Номер_секции" vertex="1">
+          <mxGeometry height="40" width="80" x="660" y="101.25" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_sec_id" edge="1" parent="1" source="attr_sector_id" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_sector">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_sec_name" edge="1" parent="1" source="attr_sector_name" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_sector">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_sec_rack" edge="1" parent="1" source="attr_sector_rack" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_sector">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_sec_sect" edge="1" parent="1" source="attr_sector_sect" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_sector">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="121.25" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="entity_goods" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=14;fontStyle=1;align=center;fontColor=#ffffff;" value="Товар" vertex="1">
+          <mxGeometry height="50" width="120" x="690" y="598.75" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_goods_id" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="&lt;u&gt;ID_Товара&lt;/u&gt;" vertex="1">
+          <mxGeometry height="30" width="80" x="570" y="446.25" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_goods_art" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Артикул" vertex="1">
+          <mxGeometry height="40" width="80" x="840" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_goods_name" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Наименование" vertex="1">
+          <mxGeometry height="40" width="80" x="570" y="481.25" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_goods_size" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Размеры" vertex="1">
+          <mxGeometry height="40" width="80" x="860" y="603.75" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_goods_price" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Цена_за_единицу" vertex="1">
+          <mxGeometry height="40" width="110" x="540" y="526.25" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_goods_stock" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Остаток_на_складе" vertex="1">
+          <mxGeometry height="40" width="130" x="840" y="646.25" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_g_id" edge="1" parent="1" source="attr_goods_id" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="entity_goods">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="730" y="591.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_g_art" edge="1" parent="1" source="attr_goods_art" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="entity_goods">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_g_name" edge="1" parent="1" source="attr_goods_name" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="entity_goods">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_g_size" edge="1" parent="1" source="attr_goods_size" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="entity_goods">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="780" y="598.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_g_price" edge="1" parent="1" source="attr_goods_price" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="entity_goods">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="730" y="591.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_g_stock" edge="1" parent="1" source="attr_goods_stock" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="entity_goods">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="793" y="598.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="entity_client" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=14;fontStyle=1;align=center;fontColor=#ffffff;" value="Клиент" vertex="1">
+          <mxGeometry height="50" width="120" x="1700" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_client_id" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="&lt;u&gt;ID_Клиента&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="80" x="1650" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_client_name" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Наименование_организации" vertex="1">
+          <mxGeometry height="40" width="180" x="1550" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_client_phone" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Телефон" vertex="1">
+          <mxGeometry height="40" width="80" x="1800" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_client_email" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Email" vertex="1">
+          <mxGeometry height="40" width="80" x="1720" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_client_addr" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Адрес" vertex="1">
+          <mxGeometry height="40" width="80" x="1800" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_cl_id" edge="1" parent="1" source="attr_client_id" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_client">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_cl_name" edge="1" parent="1" source="attr_client_name" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_client">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_cl_phone" edge="1" parent="1" source="attr_client_phone" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_client">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_cl_email" edge="1" parent="1" source="attr_client_email" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_client">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_cl_addr" edge="1" parent="1" source="attr_client_addr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_client">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="entity_emp" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=14;fontStyle=1;align=center;fontColor=#ffffff;" value="Сотрудник" vertex="1">
+          <mxGeometry height="50" width="120" x="1135" y="535" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_emp_id" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="&lt;u&gt;ID_Сотрудника&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="110" x="1320" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_emp_fio" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="ФИО" vertex="1">
+          <mxGeometry height="40" width="80" x="1065" y="655" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_emp_post" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Должность" vertex="1">
+          <mxGeometry height="40" width="80" x="1000" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_emp_login" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Логин" vertex="1">
+          <mxGeometry height="40" width="80" x="1240" y="655" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_emp_pass" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Пароль" vertex="1">
+          <mxGeometry height="40" width="80" x="1155" y="655" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_em_id" edge="1" parent="1" source="attr_emp_id" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_emp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_em_fio" edge="1" parent="1" source="attr_emp_fio" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_emp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_em_post" edge="1" parent="1" source="attr_emp_post" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="entity_emp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_em_login" edge="1" parent="1" source="attr_emp_login" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_emp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_em_pass" edge="1" parent="1" source="attr_emp_pass" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_emp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="entity_order" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=14;fontStyle=1;align=center;fontColor=#ffffff;" value="Заказ" vertex="1">
+          <mxGeometry height="50" width="120" x="1475" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_order_id" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="&lt;u&gt;ID_Заказа&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="80" x="1720" y="51.25" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_order_date" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Дата_заказа" vertex="1">
+          <mxGeometry height="40" width="80" x="1720" y="211.25" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_order_status" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Статус" vertex="1">
+          <mxGeometry height="40" width="80" x="1720" y="96.25" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_order_sum" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Общая_сумма" vertex="1">
+          <mxGeometry height="40" width="80" x="1720" y="256.25" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_ord_id" edge="1" parent="1" source="attr_order_id" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="entity_order">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_ord_date" edge="1" parent="1" source="attr_order_date" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="entity_order">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_ord_status" edge="1" parent="1" source="attr_order_status" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="entity_order">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1595" y="512.54" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_ord_sum" edge="1" parent="1" source="attr_order_sum" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="entity_order">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="entity_orderitem" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=14;fontStyle=1;align=center;fontColor=#ffffff;" value="Состав_заказа" vertex="1">
+          <mxGeometry height="50" width="120" x="920" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_oi_id" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="&lt;u&gt;ID_Состава&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="80" x="850" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_oi_qty" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Количество" vertex="1">
+          <mxGeometry height="40" width="80" x="940" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_oi_price" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Цена_за_единицу" vertex="1">
+          <mxGeometry height="40" width="120" x="1040" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_oi_id" edge="1" parent="1" source="attr_oi_id" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_orderitem">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_oi_qty" edge="1" parent="1" source="attr_oi_qty" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_orderitem">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_oi_price" edge="1" parent="1" source="attr_oi_price" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_orderitem">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="entity_ship" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=14;fontStyle=1;align=center;fontColor=#ffffff;" value="Отгрузка" vertex="1">
+          <mxGeometry height="50" width="120" x="1180" y="263.75" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_ship_id" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="&lt;u&gt;ID_Отгрузки&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="80" x="1130" y="193.75" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_ship_date" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Дата_отгрузки" vertex="1">
+          <mxGeometry height="40" width="90" x="1195" y="153.75" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_ship_num" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontSize=12;align=center;fontColor=#ffffff;" value="Номер_накладной" vertex="1">
+          <mxGeometry height="40" width="120" x="1280" y="193.75" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_sh_id" edge="1" parent="1" source="attr_ship_id" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_ship">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_sh_date" edge="1" parent="1" source="attr_ship_date" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_ship">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_sh_num" edge="1" parent="1" source="attr_ship_num" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_ship">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_type_goods" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=12;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" value="содержит" vertex="1">
+          <mxGeometry height="80" width="80" x="310" y="401.25" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_tg1" edge="1" parent="1" source="entity_type" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="rel_type_goods">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_tg2" edge="1" parent="1" source="rel_type_goods" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="entity_goods">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="label_tg1" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;align=center;" value="1" vertex="1">
+          <mxGeometry height="30" width="30" x="225" y="311.25" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_mark_goods" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=12;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" value="используется" vertex="1">
+          <mxGeometry height="80" width="80" x="310" y="541.25" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_mg1" edge="1" parent="1" source="entity_mark" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="rel_mark_goods">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_mg2" edge="1" parent="1" source="rel_mark_goods" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_goods">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="label_mg1" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;align=center;" value="1" vertex="1">
+          <mxGeometry height="30" width="30" x="210" y="521.25" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_dens_goods" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=12;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" value="имеет" vertex="1">
+          <mxGeometry height="80" width="80" x="310" y="681.25" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_dg1" edge="1" parent="1" source="entity_dens" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="rel_dens_goods">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_dg2" edge="1" parent="1" source="rel_dens_goods" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="entity_goods">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="label_dg1" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;align=center;" value="1" vertex="1">
+          <mxGeometry height="30" width="30" x="200" y="727.5" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_form_goods" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=12;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" value="применяется" vertex="1">
+          <mxGeometry height="80" width="80" x="310" y="821.25" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_fg1" edge="1" parent="1" source="entity_form" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="rel_form_goods">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_fg2" edge="1" parent="1" source="rel_form_goods" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="entity_goods">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="730" y="611.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_fg1" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;align=center;" value="1" vertex="1">
+          <mxGeometry height="30" width="30" x="190" y="923.75" as="geometry" />
+        </mxCell>
+        <mxCell id="label_fg2" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;align=center;" value="M" vertex="1">
+          <mxGeometry height="30" width="30" x="740" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_unit_goods" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=12;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" value="измеряет" vertex="1">
+          <mxGeometry height="80" width="80" x="310" y="961.25" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_ug1" edge="1" parent="1" source="entity_unit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="rel_unit_goods">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_ug2" edge="1" parent="1" source="rel_unit_goods" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="entity_goods">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="label_ug1" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;align=center;" value="1" vertex="1">
+          <mxGeometry height="30" width="30" x="190" y="1123.75" as="geometry" />
+        </mxCell>
+        <mxCell id="label_ug2" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;align=center;" value="M" vertex="1">
+          <mxGeometry height="30" width="30" x="650" y="628.75" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_sector_goods" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=12;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" value="размещает" vertex="1">
+          <mxGeometry height="80" width="80" x="530" y="331.25" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_sg1" edge="1" parent="1" source="entity_sector" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="rel_sector_goods">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_sg2" edge="1" parent="1" source="rel_sector_goods" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="entity_goods">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="label_sg1" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;align=center;" value="1" vertex="1">
+          <mxGeometry height="30" width="30" x="580" y="276.25" as="geometry" />
+        </mxCell>
+        <mxCell id="label_sg2" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;align=center;" value="M" vertex="1">
+          <mxGeometry height="30" width="30" x="780" y="648.75" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_client_order" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=12;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" value="оформляет" vertex="1">
+          <mxGeometry height="80" width="80" x="1565" y="322.5" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_co1" edge="1" parent="1" source="entity_client" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="rel_client_order">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_co2" edge="1" parent="1" source="rel_client_order" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="entity_order">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="label_co1" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;align=center;" value="1" vertex="1">
+          <mxGeometry height="30" width="30" x="1665" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="label_co2" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;align=center;" value="M" vertex="1">
+          <mxGeometry height="30" width="30" x="1550" y="101.25" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_emp_order" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=12;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" value="принимает" vertex="1">
+          <mxGeometry height="80" width="80" x="1280" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_eo1" edge="1" parent="1" source="entity_emp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="rel_emp_order">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_eo2" edge="1" parent="1" source="rel_emp_order" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_order">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="label_eo1" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;align=center;" value="1" vertex="1">
+          <mxGeometry height="30" width="30" x="1195" y="505" as="geometry" />
+        </mxCell>
+        <mxCell id="label_eo2" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;align=center;" value="M" vertex="1">
+          <mxGeometry height="30" width="30" x="1440" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_order_item" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=12;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" value="включает" vertex="1">
+          <mxGeometry height="80" width="80" x="940" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_oi1" edge="1" parent="1" source="entity_order" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="rel_order_item">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="980" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_oi2" edge="1" parent="1" source="rel_order_item" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_orderitem">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="label_oi2" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;align=center;" value="M" vertex="1">
+          <mxGeometry height="30" width="30" x="880" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_goods_item" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=12;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" value="входит в" vertex="1">
+          <mxGeometry height="80" width="80" x="740" y="755" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_gi1" edge="1" parent="1" source="entity_goods" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" target="rel_goods_item">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_gi2" edge="1" parent="1" source="rel_goods_item" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="entity_orderitem">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="786.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_gi2" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;align=center;" value="M" vertex="1">
+          <mxGeometry height="30" width="30" x="985" y="735" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_order_ship" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=12;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" value="отгружается" vertex="1">
+          <mxGeometry height="80" width="80" x="1400" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_os1" edge="1" parent="1" source="entity_order" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="rel_order_ship">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_os2" edge="1" parent="1" source="rel_order_ship" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="entity_ship">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1380.052631578947" y="335.0526315789475" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_emp_ship" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=12;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" value="оформляет" vertex="1">
+          <mxGeometry height="80" width="80" x="1155" y="356.25" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_es1" edge="1" parent="1" source="entity_emp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="rel_emp_ship">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_es2" edge="1" parent="1" source="rel_emp_ship" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entity_ship">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="label_es2" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;align=center;" value="M" vertex="1">
+          <mxGeometry height="30" width="30" x="1250" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="sLBcwMg-x7PyHt5RPAsQ-9" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;align=center;" value="1" vertex="1">
+          <mxGeometry height="30" width="30" x="1260" y="560" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
